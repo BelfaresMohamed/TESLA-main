@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+.back-ground-white{ display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 3rem;
+    width: 100%;
+    position: fixed;
+}
+.nav-bar1{
+   
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 1rem;
+    width:100%;
+     animation: kolo ease-in-out 2s  ;
+     z-index: 1200;
+    
+   
+    
+}
+@keyframes kolo {
+    0%{
+       opacity: 0;
+    }
+    100%{
+       opacity: 1;
+    }
+}
+.display-ul-1{
+    display: flex;
+    list-style: none;
+    
+}
+.display-ul-1 li{
+    margin-inline-start: 1.6rem;
+    
+}
+.display-ul-1 li a{
+    text-decoration: none;
+    color: black;
+
+}
+.display-ul-1 li:hover{
+    border: 1px solid rgba(0, 0, 0, 0);
+    background-color: rgba(211, 211, 211, 0.556);
+    border-radius:5px ;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+height: 25px;
+}
+.display-ul-2{
+    margin-right: 15px;
+    list-style: none;
+    display: flex;
+}
+
+.display-ul-2 li {
+    margin-inline-start: 1.2rem;
+}
+/* model-y */
+
+.modal-a{
+ background-image: url(../images/tesla1.jpeg);
+   background-position: center;
+   background-size: cover;
+   width: 100%;
+   height: 100%;
+    
+}
+
+
+.modal-a h2{
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 50%;
+    transform: translate(-50%);
+    animation-name: model-y;
+    animation-duration: 2s ;
+    animation-delay: 5s ease;
+    font-size: 2rem;
+
+}
+
+
+.modal-a a{
+    position: absolute;
+    margin-top: 12%;
+    font-size: 1.5rem;
+    color: blue;
+    transform: translate(-50%);
+    animation-name: modal-a;
+    animation-duration: 2s;
+    animation-delay: 5s ease;
+    top: 2%;
+    left: 50%;
+}
+
+.btn1{
+    padding: 9px;
+    width: 210px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    align-items: center;
+    top: 80%;
+    left: 40%;
+    gap: 50px;
+    transform: translate(-50%);
+    background-color: gray;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    animation-name: btn1;
+    animation-duration: 2s;
+    animation-delay: 2s ease;
+  
+}
+
+
+
+.btn2{
+    padding: 9px;
+    width: 210px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    align-items: center;
+    top: 80%;
+    left: 60%;
+    gap: 50px;
+    transform: translate(-50%);
+    border: none;
+    border-radius: 5px;
+    color: gray;
+    font-weight: bold;
+    font-size: 1rem;
+    animation-name: btn2;
+    animation-duration: 2s;
+    animation-delay: 2 ease;
+}
+
+@keyframes model-y {
+    0%{
+        opacity: 0;
+        color: white;
+        margin-top: 10.5%;
+    }
+    50%{
+        opacity: 0;
+        color: black;
+        margin-top: 10.3%;
+
+    }
+    100%{
+        opacity: 1;
+        color: black;
+        margin-top: 10%;
+    }
+}
+
+
+@keyframes modal-a {
+    0%{
+        opacity: 0;
+        margin-top:12.5% ;
+    }
+
+    50%{
+        opacity: 0;
+        margin-top:12.3% ;
+    }
+    75%{
+        opacity: 0;
+        margin-top:12.2% ;
+
+    }
+    100%{
+        margin-top:12% ;
+        opacity: 1;
+
+    }
+}
+
+@keyframes btn1 {
+    0%{
+        opacity: 0;
+        top: 80%;
+        left: 30%;
+    }
+    100%{
+        opacity: 1;
+        top: 80%;
+        left: 40%;
+    }
+}
+
+@keyframes btn2 {
+    0%{
+        opacity: 0;
+        top: 80%;
+        left:70%;
+    }
+    100%{
+        opacity: 1;
+        top: 80%;
+        left: 60%;
+    }
+}
+
+.parallax_section{
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+.modal-b{
+    background-image: url(../images/tesla2.jpeg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+.modal-b h2{
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 50%;
+    transform: translate(-50%);
+    animation-name: model-y;
+    animation-duration: 2s ;
+    animation-delay: 5s ease;
+    font-size: 2rem;
+
+}
+
+
+.modal-b a{
+    position: absolute;
+    margin-top: 12%;
+    font-size: 1.5rem;
+    color: blue;
+    transform: translate(-50%);
+    animation-name: modal-a;
+    animation-duration: 2s;
+    animation-delay: 5s ease;
+    top: 2%;
+    left: 50%;
+}
+
